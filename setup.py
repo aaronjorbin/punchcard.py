@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-version = "0.1"
+version = "0.2"
 setup(name='punchcard.py',
       version=version,
       description='Command line utility to create a punchcard graph',
@@ -14,6 +14,7 @@ setup(name='punchcard.py',
             'Programming Language :: Python',
             'Topic :: Terminals',
             ],
-      download_url="http://github.com/downloads/aaronjorbin/punchcard/punchcard.py-%s.tar.gz" % version,
+      download_url="https://github.com/aaronjorbin/punchcard.py/archive/%s.zip" % version,
+      install_requires = [ "pygooglechart" ],
       scripts = ['punchcard/punchcard.py']
      )
